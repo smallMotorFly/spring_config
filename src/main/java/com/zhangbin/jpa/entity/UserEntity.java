@@ -18,7 +18,6 @@ import java.io.Serializable;
 public class UserEntity implements Serializable {
 
     @Id
-    //
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "t_id")
     private Long id;
