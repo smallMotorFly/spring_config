@@ -31,6 +31,9 @@ public class UserEntity implements Serializable {
     @Column(name = "t_address")
     private String address;
 
+    @Column(name = "t_pwd")
+    private String password;
+
     public Long getId() {
         return id;
     }
@@ -61,5 +64,13 @@ public class UserEntity implements Serializable {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
